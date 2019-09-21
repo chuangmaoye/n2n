@@ -12,7 +12,6 @@
             -l 后面跟服务器地址和端口号
             -m 后面跟虚拟mac地址，按照mac规则随意修改即可
 ## mac
-    待尝试
     1.brew install openssl
     2.进入n2n_v1目录，进行 sudo make && sudo make install 即可安装
     
