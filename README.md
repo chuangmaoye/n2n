@@ -13,13 +13,8 @@
             -m 后面跟虚拟mac地址，按照mac规则随意修改即可
 ## mac
     待尝试
-    brew install openssl
-    brew install cmake
-    编辑n2n_v2/CMakeLists.txt 文件, 找到set(CMAKE_C_FLAGS 和set(CMAKE_CXX_FLAGS 两行
-    在这两行的里面括号里面的部分, 加入编译参数-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib
-    在 n2n_v2 创建 build 文件夹, cmake .. 来创建Makefile, 然后make
-    sudo make install即可安装
-    sudo chmod -R 777 /usr/local/sbin
+    1.brew install openssl
+    2.进入n2n_v1目录，进行 sudo make && sudo make install 即可安装
     
     运行同linux
     nohup edge -d n2n0 -c myn2n -M 1200 -k liliangliang -a 1.2.3.2～254 -l 服务器ip:33333 -m 41:04:05:14:11:01 > /tmp/edge.log 2<&1 &
