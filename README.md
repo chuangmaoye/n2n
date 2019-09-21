@@ -20,6 +20,15 @@
     在 n2n_v2 创建 build 文件夹, cmake .. 来创建Makefile, 然后make
     sudo make install即可安装
     sudo chmod -R 777 /usr/local/sbin
+    
+    运行同linux
+    nohup edge -d n2n0 -c myn2n -M 1200 -k liliangliang -a 1.2.3.2～254 -l 服务器ip:33333 -m 41:04:05:14:11:01 > /tmp/edge.log 2<&1 &
+    参数说明 
+        -a 后面是本机虚拟ip地址 1.2.3.2~1.2.3.254 范围
+        -l 后面跟服务器地址和端口号
+        -m 后面跟虚拟mac地址，按照mac规则随意修改即可
+
+
     ps 补充有些机器上可能会报错，通过加入参数-vf发现日志ERROR: Unable to open tap device，可以通过下面方式安装虚拟网卡:
     brew cask install tuntap
     查看是否有如下两个内核扩展
