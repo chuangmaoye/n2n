@@ -17,7 +17,7 @@
     2.进入n2n_v1目录，进行 sudo make && sudo make install 即可安装
     
     运行同linux
-    nohup edge -d n2n0 -c myn2n -M 1200 -k liliangliang -a 1.2.3.2～254 -l 服务器ip:33333 -m 41:04:05:14:11:01 > /tmp/edge.log 2<&1 &
+    sudo nohup edge -d n2n0 -c myn2n -M 1200 -k liliangliang -a 1.2.3.2～254 -l 服务器ip:33333 -m 41:04:05:14:11:01 > /tmp/edge.log 2<&1 &
     参数说明 
         -a 后面是本机虚拟ip地址 1.2.3.2~1.2.3.254 范围
         -l 后面跟服务器地址和端口号
