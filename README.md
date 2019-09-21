@@ -1,6 +1,6 @@
 ## windows
     1.先安装n2nguien.exe
-    2.然后更改配置文件n2ngui.ini，修改里面的服务器地址supernode_IP = 服务器ip 和本地虚拟ip地址edge_IP = 1.2.3.10 注：1.2.3.2~1.2.3.254 都可用（47、48已经被占用）
+    2.然后更改配置文件n2ngui.ini，修改里面的服务器地址supernode_IP = 服务器ip、服务器端口supernode_Port = 33333 和 本地虚拟ip地址edge_IP = 1.2.3.10 注：1.2.3.2~1.2.3.254 都可用（47、48已经被占用）
     3.修改完之后把文件替换到n2nguien.exe的安装目录
     4.启动桌面上的n2n Gui程序（使用管理员权限运行） 点击ok 稍等片刻ping一下1.2.3.47
 ## linux
